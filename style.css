@@ -45,19 +45,26 @@ h1 {
     )
     scale(200%); */
   transform-origin: calc(var(--pathWidth) / 2) calc(var(--pathHeight) / 2);
-  animation: zoomIn 10s ease-out;
+  animation: zoomIn 6s ease-out;
   animation-fill-mode: both;
 }
 
 @keyframes zoomIn {
-  from {
+  0% {
     transform: translate(
         calc(50vw - var(--pathWidth) / 2),
         calc(50vh - var(--pathHeight) / 2)
       )
       scale(200%);
   }
-  to {
+  40% {
+    transform: translate(
+        calc(50vw - var(--pathWidth) / 2),
+        calc(50vh - var(--pathHeight) / 2)
+      )
+      scale(1000%);
+  }
+  100% {
     transform: translate(
         calc(50vw - var(--pathWidth) / 2 + 1500px),
         calc(50vh - var(--pathHeight) / 2)
@@ -65,4 +72,3 @@ h1 {
       scale(10000%);
   }
 }
-
