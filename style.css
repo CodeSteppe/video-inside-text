@@ -20,6 +20,7 @@ video {
   left: 0;
   width: 100%;
   height: 100%;
+  clip-path: url(#cross);
 }
 
 h1 {
@@ -34,4 +35,8 @@ h1 {
   color: transparent;
   width: fit-content;
   height: fit-content;
+}
+
+#cross {
+  transform: translate(300px, 300px) scale(200%);
 }
