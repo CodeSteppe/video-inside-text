@@ -44,8 +44,13 @@ h1 {
       calc(50vh - var(--pathHeight) / 2)
     )
     scale(200%); */
-  transform-origin: calc(var(--pathWidth) / 2) calc(var(--pathHeight) / 2);
-  animation: zoomIn 6s ease-out;
+  transform-origin: calc(var(--pathWidth) / 2 - 18.5px)
+    calc(var(--pathHeight) / 2);
+  animation-name: zoomIn;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
   animation-fill-mode: both;
 }
 
@@ -55,18 +60,11 @@ h1 {
         calc(50vw - var(--pathWidth) / 2),
         calc(50vh - var(--pathHeight) / 2)
       )
-      scale(200%);
-  }
-  40% {
-    transform: translate(
-        calc(50vw - var(--pathWidth) / 2),
-        calc(50vh - var(--pathHeight) / 2)
-      )
-      scale(1000%);
+      scale(100%);
   }
   100% {
     transform: translate(
-        calc(50vw - var(--pathWidth) / 2 + 1500px),
+        calc(50vw - var(--pathWidth) / 2),
         calc(50vh - var(--pathHeight) / 2)
       )
       scale(10000%);
