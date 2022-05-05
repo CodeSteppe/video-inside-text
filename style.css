@@ -38,5 +38,15 @@ h1 {
 }
 
 #cross {
-  transform: translate(300px, 300px) scale(200%);
+  animation: zoomIn 8s ease-in;
+  animation-fill-mode: both;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: translate(30vw, 44vh);
+  }
+  to {
+    transform: translate(-2450vw, -1450vh) scale(10000%);
+  }
 }
